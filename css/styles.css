@@ -1,0 +1,13 @@
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.unShowing {
+  display: none;
+}
+
+.showing {
+  display: block;
+}

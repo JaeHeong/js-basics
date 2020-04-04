@@ -1,0 +1,33 @@
+<!-- 기억해야 되는 부분
+자바 import시킬 때 <script src="어쩌구저쩌구""></script>에서 src이다 class가 아니라;;
+
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="clock js-clock">
+      <span class="clock_text">
+        00:00
+      </span>
+    </div>
+    <form class="name_box js-username unShowing">
+      <input type="text" placeholder="What is your name?" />
+    </form>
+    <!-- 여기서 form이란 태그를 써야된다. -->
+    <div class="hello-box js-hello unShowing"></div>
+    <form class="toDo js-toDo">
+      <input type="text" placeholder="Write a to do" />
+    </form>
+    <ul class="toDoList js-toDoList"></ul>
+    <script src="js/todo.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/username.js"></script>
+  </body>
+</html>
