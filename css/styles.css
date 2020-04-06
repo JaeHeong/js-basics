@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.name_box {
+  width: 30%;
+  padding-bottom: 40px;
+}
+
 .unShowing {
   display: none;
 }
@@ -87,7 +92,6 @@ input[type="text"] {
 }
 
 .toDoList {
-  width: 20%;
   margin-top: 10px;
   font-size: 20px;
 }
