@@ -11,7 +11,7 @@ function deleteToDo(event) {
   event.preventDefault();
   const target = event.target.parentNode;
   toDoList.removeChild(target);
-  const filteredToDo = toDos.filter(function(toDo) {
+  const filteredToDo = toDos.filter(function (toDo) {
     return (
       toDo.id !== parseInt(target.id)
     ); /** parseInt 는 스트링을 스트링이 아니게 바꿔준다. 처음에 둘이 같은 형식이 아니라서 인식을 못해서 오류가 났었다.*/
@@ -41,7 +41,7 @@ function paintToDo(text) {
   btn.innerText = "✖"; /**이모티콘 -> 윈도우 + "." */
   const toDoObj = {
     text: text,
-    id: newId
+    id: newId,
   };
   li.appendChild(btn);
   li.appendChild(span);
@@ -63,7 +63,7 @@ function loadToDo() {
   const currentToDo = localStorage.getItem(TODO_LS);
   if (currentToDo !== null) {
     const parsedToDo = JSON.parse(currentToDo);
-    parsedToDo.forEach(function(toDo) {
+    parsedToDo.forEach(function (toDo) {
       paintToDo(toDo.text);
     });
   }
