@@ -38,7 +38,7 @@ function paintToDo(text) {
     btn = document.createElement("button");
   const newId = toDos.length + 1;
   btn.addEventListener("click", deleteToDo);
-  btn.innerText = "❌"; /**이모티콘 -> 윈도우 + "." */
+  btn.innerText = "✖"; /**이모티콘 -> 윈도우 + "." */
   const toDoObj = {
     text: text,
     id: newId

@@ -9,7 +9,7 @@ function saveWeather(coordsObj) {
 }
 
 function painWeather(temp, place) {
-  weather.innerText = `Today ${temp}'C at ${place};`; /**${}이걸 잘 이용하자 */
+  weather.innerText = `It's ${temp}℃ in ${place} right now!`; /**${}이걸 잘 이용하자 */
 }
 
 function getWeather(lat, lon) {

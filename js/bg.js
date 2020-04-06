@@ -5,12 +5,15 @@
 const background = document.querySelector("body");
 
 function backGround() {
-  const rndNum = Math.floor(Math.random() * 6);
+  const rndNum = Math.floor(Math.random() * 5);
   const image = new Image(); /**new Date처럼 new Image는 이미지 하나 const로 만들어준다. */
   image.src = `images/${rndNum +
     1}.jpg`; /**img.src 는 이렇게 사용한다. jpg붙여줘야한다.  */
   image.classList.add("bgStyle");
-  background.appendChild(image);
+  image.addEventListener("load", function(event) {
+    background.appendChild(image);
+  });
+
   /**이미지는 색깔이 아니니까 이렇게 넣어준다.
    */
 }
